@@ -1,0 +1,1 @@
+console.log('Front-end ONG carregado com sucesso');

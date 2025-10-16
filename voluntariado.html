@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Voluntariado — ONG Cruzeiro do Sul</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <h2>ONG Cruzeiro do Sul</h2>
+            </a>
+            <nav class="main-nav">
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="voluntariado.html">Voluntariado</a></li>
+                    <li><a href="doar.html">Doar</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="dashboard.html">Painel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="site-main container">
+        <h1>Voluntariado</h1>
+        <p>Participe de nossas ações e torne-se voluntário.</p>
+        <section class="voluntariado-inscricao"></section>
+        <form id="form-inscricao" class="card" autocomplete="off">
+            <h2>Inscreva-se como voluntário</h2>
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="interesse">Área de interesse</label>
+            <input type="text" id="interesse" name="interesse" required>
+
+            <button type="submit">Enviar inscrição</button>
+        </form>
+        <div id="mensagem-chat" class="chat-mensagem" style="display:none; margin-top:1.5rem;">
+            <div class="chat-bubble">
+                Obrigado por se inscrever! Aguarde, entraremos em contato em breve.
+            </div>
+        </div>
+        </section>
+        <script>
+            document.getElementById('form-inscricao').addEventListener('submit', function(e) {
+                e.preventDefault();
+                this.style.display = 'none';
+                document.getElementById('mensagem-chat').style.display = 'block';
+            });
+        </script>
+    </main>
+    <footer class="site-footer text-center">
+        <p>© 2025 ONG Cruzeiro do Sul — Todos os direitos reservados</p>
+    </footer>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

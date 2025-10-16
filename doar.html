@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Como Doar — ONG Cruzeiro do Sul</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <h2>ONG Cruzeiro do Sul</h2>
+            </a>
+            <nav class="main-nav">
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="voluntariado.html">Voluntariado</a></li>
+                    <li><a href="doar.html">Doar</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="dashboard.html">Painel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="site-main container">
+        <h1>Como Doar</h1>
+        <p>Ajude nossa causa através de doações seguras e transparentes.</p>
+    </main>
+    <div class="container">
+        <h2>Como doar</h2>
+        <p>Opções de doação: cartão, boleto e transferência (simulação).</p>
+        <form id="form-doacao-2" novalidate>
+            <div class="form-grid">
+                <input type="text" name="nome" placeholder="Nome completo" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="number" name="valor" placeholder="Valor (R$)" min="1" required>
+                <input type="text" name="cep" placeholder="CEP" data-mask="cep" required>
+            </div>
+            <button class="btn" type="submit">Doar</button>
+
+            <script>
+                document.getElementById('form-doacao-2').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    alert('Obrigado pela sua doação!');
+                });
+            </script>
+            <footer class="site-footer text-center ">
+                <p>© 2025 ONG Cruzeiro do Sul — Todos os direitos reservados</p>
+            </footer>
+            <script src="js/main.js " defer></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+a { color: var(--color-primary-700); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.site-header { background: white; padding: 16px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+.container { max-width: 1200px; margin: auto; padding: 0 16px; }
+.site-footer { margin-top: 40px; padding: 16px; background: white; box-shadow: inset 0 1px 0 rgba(0,0,0,0.05); }
