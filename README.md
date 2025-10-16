@@ -88,9 +88,6 @@ O site é composto por **8 páginas HTML5 semânticas**, todas interligadas e co
 | Nome | Função |
 |------|--------|
 | **Gabriel Silveira de Araujo** | Fundador e Coordenador de Projetos |
-| **Mariana Lopes** | Assistente Social |
-| **Carlos Henrique** | Desenvolvedor da Plataforma |
-| **Ana Paula** | Comunicação e Mídias Sociais |
 | **Equipe de Voluntários** | Apoio e ações comunitárias |
 
 ---
